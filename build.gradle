@@ -14,6 +14,17 @@ buildscript {
     }
 }
 
+plugins {
+    id "org.sonarqube" version "2.8"
+}
+sonarqube {
+    properties {
+        property "sonar.projectKey", "NDSsss_sonargithubtest"
+        property "sonar.organization", "ndssss"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
+}
+
 allprojects {
     repositories {
         google()
