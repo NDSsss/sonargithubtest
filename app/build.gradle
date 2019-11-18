@@ -19,6 +19,14 @@ android {
     }
 }
 
+sonarqube {
+    properties {
+        property "sonar.projectKey", "NDSsss_sonargithubtest"
+        property "sonar.organization", "ndssss"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
