@@ -8,6 +8,7 @@ jobs:
       - image: node:latest
     environment:
       JVM_OPTS: -Xmx3200m
+      sonar.projectKey: NDSsss_sonargithubtest
     steps:
       - checkout
       - restore_cache:
