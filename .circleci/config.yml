@@ -33,4 +33,5 @@ jobs:
       - checkout
       - run:
           name: Analyze on SonarCloud
-          command: ./gradlew build sonarqube
+          command: chmod +x gradlew
+                    ./gradlew build sonarqube
